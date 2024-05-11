@@ -1,0 +1,11 @@
+
+spring:
+  application:
+    name: cors
+
+sever:
+  port: 8081
+
+logging:
+  level:
+    root: INFO
