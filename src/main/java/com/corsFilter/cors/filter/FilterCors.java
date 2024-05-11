@@ -5,6 +5,11 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+/**
+ * Koustubh Umdekar
+ *
+ */
+
 @Component
 @Configuration
 public class FilterCors implements WebMvcConfigurer{
@@ -14,7 +19,7 @@ public class FilterCors implements WebMvcConfigurer{
         corsRegistry.addMapping("/**")
                 .allowedOrigins("http://localhost:3000") //to handle multiple origins.
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-                .allowedHeaders("authorization", "content-type", "xsrf-token")
+                .allowedHeaders("*")
                 .allowCredentials(true)
                 .maxAge(3800);
     }
